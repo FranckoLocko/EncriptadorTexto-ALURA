@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <header class="encabezado">
+        <h1 class="encabezado_titulo">ENCRIPTADOR DE TEXTO</h1>
+    </header>
+    <main class="encriptador">
+        <section class="encriptador_entrada">
+            <input class="encriptador_entrada_texto" id ="encriptador_entrada_texto" type="text" placeholder="Ingrese el texto aquí">
+            <p class="encriptador_entrada_instrucciones"><img src="" alt="">Solo letras minúsculas y sin acentos</p>
+            <button class="encriptador_entrada_botones" onclick="encriptar()">Encriptar</button>
+            <button class="encriptador_entrada_botones" onclick="desencriptar()">Desencriptar</button>
+        </section>
+        <section class="encriptador_salida">
+
+            <img class="encriptador_salida_imagen" id="encriptador_salida_imagen" src="./assets/salida-vacia.png" alt="" >
+            <h2 class="encriptador_salida_subtitulo">Ningún mensaje fue encontrado</h2>
+            <p class="encriptador_salida_texto" id="encriptador_salida_texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <button class="encriptador_salida_boton" id="encriptador_salida_boton" onclick="copiar()" hidden>Copiar</button>
+        </section>
+    </main>
+    <footer class="pie_pagina">
+        Aquí va un pie de pagina
+    </footer>
+
+</body>
+</html>

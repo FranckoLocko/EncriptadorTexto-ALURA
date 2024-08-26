@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Thasadith:ital,wght@0,400;0,700;1,400;1,700&family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+:root{
+    --color-primario: #2E073F;
+    --color-secundario: #7A1CAC;
+    --color-terciario: #AD49E1;
+    --color-cuaternario: #EBD3F8;
+
+    --fuente-ysabeau: "Thasadith", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    font-family: var(--fuente-ysabeau);
+    padding: 1%;
+    background: var(--color-cuaternario);
+    box-sizing: border-box;
+}
+
+.encabezado {
+    text-align: center;
+    padding: 1%;
+    border-radius: 0.6rem;
+    background-color: var(--color-primario);
+}
+
+.encabezado_titulo {
+    font-family: var(--fuente-ysabeau);
+    font-weight: 400;
+    font-style: italic;
+    color: var(--color-cuaternario);
+}
+
+.encriptador {
+    display: grid;
+    height: 85vh;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 5%;
+    align-items: center;
+    padding: 3%;
+}
+
+.encriptador_entrada_texto {
+    box-sizing: border-box;
+    padding: 10px; /* Añade un poco de espacio interno */
+    width: 100%;
+    height: 50%;
+    margin: 0px 100px 100px 0px;
+    size-adjust: 100%;
+    color: var(--color-primario);
+    background: none;
+    border: 0;  
+}
+
+.encriptador_salida {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-terciario);
+}
+
+.encriptador_salida_imagen {
+    width: 25%;
+}
+
+.pie_pagina {
+    text-align: center;
+    font-weight: 700;
+    color: var(--color-cuaternario);
+    background: var(--color-secundario);
+    padding: 1%;
+    border-radius: 0.6rem;
+}
+
+@media (max-width: 1200px){
+    .encriptador{
+        
+    }
+}
