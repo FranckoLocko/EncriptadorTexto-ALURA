@@ -57,10 +57,10 @@ function copiar(){
 }
 
 function modificarDocumento(texto){
-    document.querySelector('h2').innerHTML = '' ;
+    document.getElementById('encriptador_salida_texto').setAttribute("hidden","true");
     document.getElementById('encriptador_salida_imagen').setAttribute("hidden","true");
     document.getElementById('encriptador_salida_boton').removeAttribute('hidden');
-    salida = document.getElementById('encriptador_salida_texto');
+    salida = document.querySelector('h2');
     salida.innerHTML = texto;
     console.log(texto);
 }
